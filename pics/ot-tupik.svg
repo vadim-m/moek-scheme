@@ -1,0 +1,24 @@
+<svg width="480" height="150" xmlns="http://www.w3.org/2000/svg">
+ <!-- Created with SVG Editor - http://github.com/mzalive/SVG Editor/ -->
+
+ <g>
+  <title>background</title>
+  <rect fill="#fff" id="canvas_background" height="152.003293" width="482.010537" y="-1" x="-1"/>
+  <g display="none" id="canvasGrid">
+   <rect fill="url(#gridpattern)" stroke-width="0" y="0" x="0" height="100%" width="100%" id="svg_6"/>
+  </g>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <line stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_1" y2="256" x2="80" y1="0" x1="80" stroke-width="3" stroke="#000" fill="none"/>
+  <line stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_2" y2="53" x2="480" y1="53" x1="0" stroke-width="3" stroke="#000" fill="none"/>
+  <line stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_3" y2="123" x2="480" y1="123" stroke-width="3" stroke="#000" fill="none"/>
+  <rect id="svg_4" height="40" width="100" y="33" x="150" stroke-opacity="null" stroke-width="3" stroke="#000" fill="#000000"/>
+  <rect id="svg_5" height="0.66665" width="0.66665" y="74.970058" x="556" fill-opacity="null" stroke-opacity="null" stroke-width="3" stroke="#000" fill="none"/>
+  <text font-weight="bold" font-style="normal" xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="15" id="svg_8" y="30.000309" x="260" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#000000">Подающий трубопровод ЦО</text>
+  <path id="svg_12" d="m450.50413,151.45438c0,0 -13.00026,-11.00021 -13.00026,-11.00021" opacity="0.5" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#000000"/>
+  <path transform="rotate(180 431.3330383300781,122.66627502441406) " id="svg_14" d="m420.00001,131.35914l10.57567,-8.69498l-10.57567,-8.69505l6.04453,-4.96912l16.62147,13.66417l-16.62147,13.6684" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#000000"/>
+  <path id="svg_15" d="m420.00001,61.85945l10.57567,-8.69499l-10.57567,-8.69505l6.04453,-4.96911l16.62147,13.66416l-16.62147,13.6684" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#000000"/>
+  <text font-weight="bold" font-style="normal" xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="15" id="svg_16" y="100" x="260" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#000000">Обратный трубопровод ЦО</text>
+ </g>
+</svg>

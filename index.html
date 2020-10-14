@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Схема УУТЭ</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png" />
+    <link rel="manifest" href="./favicon/site.webmanifest" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <h1>Схема узла учёта ТЭ:</h1>
+        <div class="maincontent">
+          <div class="scheme-container">
+            <div class="scheme" id="scheme">
+              <img src="./pics/ot.svg" />
+              <img src="./pics/gvs.svg" />
+            </div>
+          </div>
+          <div class="buttons">
+            <div class="buttons__container">
+              <div class="buttons__text">Добавить систему:</div>
+              <div class="buttons__add">
+                <button onclick="add('ot')" class="btn">Система ЦО</button>
+                <button onclick="add('ot-tupik')" class="btn">
+                  Система ЦО (один поток)
+                </button>
+                <button onclick="add('gvs')" class="btn">Система ГВС</button>
+                <button onclick="add('gvs-tupik')" class="btn">
+                  Система ГВС (тупик)
+                </button>
+                <button onclick="add('ov')" class="btn">Система ОВ</button>
+                <button onclick="add('ov-tupik')" class="btn">
+                  Система ОВ (один поток)
+                </button>
+                <button onclick="add('ts')" class="btn">Теплосеть</button>
+                <button onclick="add('ts-pod')" class="btn">
+                  Теплосеть с подпиткой
+                </button>
+                <button onclick="add('up')" class="btn">
+                  Подача (без подписи)
+                </button>
+                <button onclick="add('down')" class="btn">
+                  Обратка (без подписи)
+                </button>
+              </div>
+            </div>
+            <div class="buttons__controls">
+              <button onclick="deleteSchemes()" class="reset-btn">
+                Очистить схему
+              </button>
+              <button onclick="doCapture()" id="select" class="btn">
+                Подтвердить
+              </button>
+              <button disabled id="save-btn" class="btn save-btn">
+                Сохранить
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="footer__info container">
+          Design by
+          <a
+            class="footer__info__link"
+            href="https://github.com/vadim-m"
+            target="_blank"
+          >
+            Vadim Monastyrskiy</a
+          >. Screenshots with JavaScript via
+          <a
+            class="footer__info__link"
+            href="https://html2canvas.hertzen.com/"
+            target="_blank"
+            >html2canvas</a
+          >
+          library.
+        </div>
+      </footer>
+    </div>
+    <script src="./html2canvas.js"></script>
+    <script src="./app.js"></script>
+    <script></script>
+  </body>
+</html>
