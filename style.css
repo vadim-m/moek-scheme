@@ -21,11 +21,13 @@ body {
   line-height: 1.42;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #2866ff;
+  color: #5063ab;
 }
 
 a {
   color: white;
+  height: 100%;
+  width: 100%;
 }
 
 b {
@@ -40,16 +42,14 @@ b {
   padding: 1.5rem;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
-  height: 100%;
 }
 
 .wrapper {
   height: 100%;
-  padding-top: 7rem;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  background-color: #5781ff;
+  justify-content: center;
+  background-color: #5063ab;
   background-image: url("./pics/bg.png");
 }
 
@@ -69,6 +69,7 @@ img {
 .scheme-container {
   width: 56%;
   max-width: 595px;
+  max-height: 347px;
   border: 1px solid black;
 }
 
@@ -129,8 +130,9 @@ img {
 
 .btn {
   width: 49%;
+  text-decoration: underline;
   font-weight: 700;
-  color: #2866ff;
+  color: #5063ab;
   font-size: 1rem;
   padding: 0.5rem;
   margin-top: 0.5rem;
@@ -172,16 +174,19 @@ img {
   margin-top: 0.5rem;
 }
 
-.footer {
-  margin-bottom: 5rem;
-}
-
 .footer__info {
   border-radius: 0px;
   background-color: #2866ff;
   color: white;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
+}
+
+/* Стили для появляющейся ссылки */
+#download__link {
+  display: block;
+  height: 100%;
+  width: 100%;
 }
 
 /* Небольшой адаптив для ноутов */
