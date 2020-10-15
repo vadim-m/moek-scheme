@@ -1,23 +1,6 @@
 const scheme = document.getElementById("scheme");
 const saveBtn = document.getElementById("save-btn");
 
-// html2canvas => any div as image file
-function doCapture() {
-  html2canvas(document.getElementById("scheme")).then(function (canvas) {
-    console.log(canvas.toDataURL("image/jpeg"), 1);
-    canvasdata = canvas.toDataURL("image/jpeg", 1);
-    let a = document.createElement("a");
-    a.textContent = "Cохранить схему";
-    a.download = "export_" + Date.now() + ".jpeg";
-    a.href = canvasdata;
-
-    // Делаем кнопку сохранить активной и добавляем в нее ссылку
-    saveBtn.disabled = false;
-    saveBtn.textContent = "";
-    saveBtn.appendChild(a);
-  });
-}
-
 // reset btn
 const deleteSchemes = () => {
   scheme.innerHTML = "";
@@ -26,9 +9,31 @@ const deleteSchemes = () => {
   saveBtn.innerText = "Cохранить";
 };
 
+// html2canvas => any div as image file
+function doCapture() {
+  html2canvas(document.getElementById("scheme")).then(function (canvas) {
+    canvasdata = canvas.toDataURL("image/jpeg", 1);
+    let a = document.createElement("a");
+    a.textContent = "Cохранить схему";
+    a.setAttribute("id", "download__link");
+    a.download = "схема_уутэ_" + Date.now() + ".jpeg";
+    a.href = canvasdata;
+
+    // Делаем кнопку сохранить активной и добавляем в нее ссылку
+    saveBtn.disabled = false;
+    saveBtn.textContent = "";
+    saveBtn.appendChild(a);
+    const downloadBtn = document.getElementById("download__link");
+
+    // Добавляем слушатель на ссылку, чтобы при клике очистить схему и выполнить deleteSchemes()
+    downloadBtn.addEventListener("click", (e) => {
+      deleteSchemes();
+    });
+  });
+}
+
 // buttons onclick function
 const add = (sym) => {
-  console.log(sym);
   switch (sym) {
     case "ot":
       scheme.innerHTML = scheme.innerHTML + '<img src="./pics/ot.svg">';
